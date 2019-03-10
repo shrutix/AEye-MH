@@ -82,7 +82,27 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
                 else if firstResult.identifier.contains("backpack"){
                     self.navigationItem.title = "backpack"
                 }
-                
+                else if firstResult.identifier.contains("laptop"){
+                    self.navigationItem.title = "laptop"
+                }
+                else if firstResult.identifier.contains("apple"){
+                    self.navigationItem.title = "apple"
+                }
+                else if firstResult.identifier.contains("toothbrush"){
+                    self.navigationItem.title = "toothbrush"
+                }
+                else if firstResult.identifier.contains("wristband"){
+                    self.navigationItem.title = "wristband"
+                }
+                else if firstResult.identifier.contains("fork"){
+                    self.navigationItem.title = "fork"
+                }
+                else if firstResult.identifier.contains("spoon"){
+                    self.navigationItem.title = "spoon"
+                }
+                else if firstResult.identifier.contains("donut"){
+                    self.navigationItem.title = "donut"
+                }
                 else {
                     self.navigationItem.title = "try again"
                 }
