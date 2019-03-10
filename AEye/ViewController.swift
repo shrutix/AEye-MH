@@ -103,8 +103,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
                 else if firstResult.identifier.contains("donut"){
                     self.navigationItem.title = "donut"
                 }
+                else if firstResult.identifier.contains("chair"){
+                    self.navigationItem.title = "chair"
+                }
+                else if firstResult.identifier.contains("table"){
+                    self.navigationItem.title = "table"
+                }
+                else if firstResult.identifier.contains("ball"){
+                    self.navigationItem.title = "ball"
+                }
+                else if firstResult.identifier.contains("stairs"){
+                    self.navigationItem.title = "stairs"
+                }
+                else if firstResult.identifier.contains("donut"){
+                    self.navigationItem.title = "donut"
+                }
                 else {
-                    self.navigationItem.title = "try again"
+                    self.navigationItem.title = "Try again"
                 }
             }
         }
