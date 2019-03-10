@@ -15,6 +15,7 @@
 		D2E8A8022234794600C3DE44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E8A8002234794600C3DE44 /* LaunchScreen.storyboard */; };
 		D2E8A80D2234794700C3DE44 /* AEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8A80C2234794700C3DE44 /* AEyeTests.swift */; };
 		D2E8A8182234794700C3DE44 /* AEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E8A8172234794700C3DE44 /* AEyeUITests.swift */; };
+		D2E8A82622347B5400C3DE44 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D2E8A82522347B5300C3DE44 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D2E8A8132234794700C3DE44 /* AEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E8A8172234794700C3DE44 /* AEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEyeUITests.swift; sourceTree = "<group>"; };
 		D2E8A8192234794700C3DE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2E8A82522347B5300C3DE44 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D2E8A8002234794600C3DE44 /* LaunchScreen.storyboard */,
 				D2E8A8032234794600C3DE44 /* Info.plist */,
 				D2E8A7FB2234793D00C3DE44 /* AEye.xcdatamodeld */,
+				D2E8A82522347B5300C3DE44 /* Inceptionv3.mlmodel */,
 			);
 			path = AEye;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2E8A7F72234793D00C3DE44 /* ViewController.swift in Sources */,
+				D2E8A82622347B5400C3DE44 /* Inceptionv3.mlmodel in Sources */,
 				D2E8A7F52234793D00C3DE44 /* AppDelegate.swift in Sources */,
 				D2E8A7FD2234793D00C3DE44 /* AEye.xcdatamodeld in Sources */,
 			);
