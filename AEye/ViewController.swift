@@ -115,11 +115,37 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
                 else if firstResult.identifier.contains("stairs"){
                     self.navigationItem.title = "stairs"
                 }
-                else if firstResult.identifier.contains("donut"){
-                    self.navigationItem.title = "donut"
+                else if firstResult.identifier.contains("charger"){
+                    self.navigationItem.title = "charger"
                 }
-                else {
-                    self.navigationItem.title = "Try again"
+                else if firstResult.identifier.contains("dollarbill"){
+                    self.navigationItem.title = "dollarbill"
+                }
+                else if firstResult.identifier.contains("wallet"){
+                    self.navigationItem.title = "wallet"
+                }
+                else if firstResult.identifier.contains("backpack"){
+                    self.navigationItem.title = "backpack"
+                }
+                else if firstResult.identifier.contains("cable"){
+                    self.navigationItem.title = "cable"
+                }
+                else if firstResult.identifier.contains("coffee"){
+                    self.navigationItem.title = "coffee"
+                }
+                else if firstResult.identifier.contains("shoes"){
+                    self.navigationItem.title = "shoes"
+                }
+                else if firstResult.identifier.contains("paper"){
+                    self.navigationItem.title = "paper"
+                }
+                else if firstResult.identifier.contains("phone"){
+                    self.navigationItem.title = "phone"
+                }
+                else if firstResult.identifier.contains("pillow"){
+                    self.navigationItem.title = "pillow"
+                   /* else do {
+                    self.navigationItem.title = "Try again"*/
                 }
             }
         }
@@ -134,7 +160,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
         }
     }
     
-   lazy var classificationRequest: VNCoreMLRequest = {
+       lazy var classificationRequest: VNCoreMLRequest = {
         do {
             /*
              Use the Swift class `MobileNet` Core ML generates from the model.
@@ -143,9 +169,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
              */
             let model = try VNCoreMLModel(for: Inceptionv3().model)
             
-            let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
-                self?.processClassifications(for: request, error: error)
+            
+            let request = VNCoreMLRequest(model: model, completionHandler: { (request, error) in
+                
+                //self.updateClassifications(for: request)
             })
+            
+            
             request.imageCropAndScaleOption = .centerCrop
             return request
         } catch {
@@ -197,7 +227,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
             }
         }
     }
-    
     @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
         
         present(imagePicker, animated: true, completion: nil)
@@ -207,4 +236,5 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
     
     
 }
+
 
