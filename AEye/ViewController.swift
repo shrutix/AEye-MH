@@ -35,7 +35,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
           //  photoImageView.image = selectedImage
            detect(image: ciimage)
         
-        
         imagePicker.dismiss(animated: true, completion: nil)
     }
 
