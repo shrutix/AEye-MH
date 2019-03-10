@@ -202,6 +202,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
         
         present(imagePicker, animated: true, completion: nil)
     }
+   
+    
+    
     
 }
 
