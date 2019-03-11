@@ -149,7 +149,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
                 }
             }
         }
-        
         let handler = VNImageRequestHandler(ciImage: image )
         
         do {
@@ -159,7 +158,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
             print(error)
         }
     }
-    
        lazy var classificationRequest: VNCoreMLRequest = {
         do {
             /*
@@ -174,7 +172,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate , UINavi
                 
                 //self.updateClassifications(for: request)
             })
-            
             
             request.imageCropAndScaleOption = .centerCrop
             return request
